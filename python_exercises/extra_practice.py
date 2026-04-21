@@ -75,13 +75,16 @@
 # print(shopping_list[::-1])
 
 # dictionaries
-student_1 = {'name': 'susan', 'stream': 'tech', 'completed_lessons': 4, 'completed_lesson_name': ['variables',
-                                                                                                  'data_types',
-                                                                                                  'set up']}
-print(student_1)
-print(type(student_1))
-print(student_1['completed_lesson_name'][0])
-student_1['completed_lessons'] = 3
-print(student_1)
-student_1.pop(['completed_lesson_name'][1])
-print(student_1)
+# counts how many time one thing appears in dictionary
+data = ["apple", "banana", "apple", "orange", "banana", "apple"]
+
+count_fruit = {}
+for fruit in data:
+    if fruit in data:
+        count_fruit[fruit]= count_fruit.get(fruit, 0) + 1
+print(count_fruit)
+
+person = {"name": "Alice", "age": 25}
+print(person.keys())
+print(person.values())
+print(person.items())
